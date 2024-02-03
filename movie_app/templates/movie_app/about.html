@@ -1,0 +1,12 @@
+{% extends 'movie_app/_base.html' %}
+
+<html>
+  <body>
+    {% block content %}
+    <p>About this page ...</p>
+
+    {% load static %}
+    <img src="{% static 'movie_app/duck.png' %}" alt="duck image" />
+    {% endblock%}
+  </body>
+</html>

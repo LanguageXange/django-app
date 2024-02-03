@@ -1,0 +1,22 @@
+{% extends 'movie_app/_base.html' %}
+
+<html>
+  {% block title %}My Home{% endblock %}
+
+  <body>
+    {% block content %}
+    <p>Django App</p>
+    {% if movies%}
+    <ul>
+      {% for movie in movies %}
+      <li>movie: {{ movie|title}}</li>
+
+      {% endfor %}
+    </ul>
+
+    {% else %}
+
+    <p>No movies...</p>
+    {% endif %} {% endblock%}
+  </body>
+</html>
